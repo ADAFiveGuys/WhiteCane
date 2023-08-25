@@ -29,6 +29,8 @@
 		70FFD87B2A9866FD00BC1BF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FFD87A2A9866FD00BC1BF1 /* Preview Assets.xcassets */; };
 		70FFD87D2A9866FD00BC1BF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD87C2A9866FD00BC1BF1 /* Persistence.swift */; };
 		70FFD8802A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD87E2A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld */; };
+		86E7561F2A993A8C0053ABB1 /* MLTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7561D2A993A8C0053ABB1 /* MLTestView.swift */; };
+		86E756202A993A8C0053ABB1 /* MyTestML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 86E7561E2A993A8C0053ABB1 /* MyTestML.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		70FFD87A2A9866FD00BC1BF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70FFD87C2A9866FD00BC1BF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		70FFD87F2A9866FD00BC1BF1 /* WhiteCane.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhiteCane.xcdatamodel; sourceTree = "<group>"; };
+		86E7561D2A993A8C0053ABB1 /* MLTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLTestView.swift; sourceTree = "<group>"; };
+		86E7561E2A993A8C0053ABB1 /* MyTestML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyTestML.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		70FFD8722A9866FD00BC1BF1 /* WhiteCane */ = {
 			isa = PBXGroup;
 			children = (
+				86E7561C2A993A8C0053ABB1 /* Jerry */,
 				0B4377292A989728004E6B0F /* Sound */,
 				0B762F8B2A98688F0085B5E6 /* Musk */,
 				70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */,
@@ -143,6 +148,15 @@
 				70FFD87A2A9866FD00BC1BF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86E7561C2A993A8C0053ABB1 /* Jerry */ = {
+			isa = PBXGroup;
+			children = (
+				86E7561D2A993A8C0053ABB1 /* MLTestView.swift */,
+				86E7561E2A993A8C0053ABB1 /* MyTestML.mlmodel */,
+			);
+			path = Jerry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				70FFD87D2A9866FD00BC1BF1 /* Persistence.swift in Sources */,
+				86E7561F2A993A8C0053ABB1 /* MLTestView.swift in Sources */,
 				0B4377462A98FDC7004E6B0F /* WarGuide.swift in Sources */,
+				86E756202A993A8C0053ABB1 /* MyTestML.mlmodel in Sources */,
 				0B4377262A987D1E004E6B0F /* TextFieldView.swift in Sources */,
 				70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */,
 				0B4377422A98F521004E6B0F /* GuidelinesView.swift in Sources */,
