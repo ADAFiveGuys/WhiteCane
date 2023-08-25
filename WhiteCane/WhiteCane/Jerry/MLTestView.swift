@@ -54,7 +54,7 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
         guard shouldPerformDetection else { return }
         DispatchQueue.global(qos: .background).async {
             guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-            let model = try! VNCoreMLModel(for: MyTestML().model)
+            let model = try! VNCoreMLModel(for: MyTestML2().model)
             let request = VNCoreMLRequest(model: model) { request, error in
                 if let results = request.results as? [VNRecognizedObjectObservation] {
                     let detectedText = results.map { observation in
