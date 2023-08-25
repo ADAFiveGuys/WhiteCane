@@ -25,7 +25,7 @@ struct SirenView: View {
             }
             .font(.title3)
             .multilineTextAlignment(.center)
-            Spacer()
+            
             if !isPress {
                 ButtonView(text: "사이렌 울리기", color: .redCustom, textColor: .white) {
                     isPress.toggle()
