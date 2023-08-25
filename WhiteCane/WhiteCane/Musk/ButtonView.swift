@@ -24,8 +24,7 @@ struct ButtonView: View {
                     .foregroundColor(color == nil ? .yellowCustom : color)
                     .padding(.horizontal, 24)
                 Text(text)
-                    .font(.system(size: 30))
-                    .fontWeight(.semibold)
+                    .font(Font.custom("SF Pro Text", size: 30).weight(.semibold))
                     .foregroundColor(.black)
                     
             }
