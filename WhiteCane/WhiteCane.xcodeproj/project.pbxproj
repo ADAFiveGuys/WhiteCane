@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4377222A98766D004E6B0F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377212A98766D004E6B0F /* ButtonView.swift */; };
+		0B4377242A987A46004E6B0F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377232A987A46004E6B0F /* ColorExtension.swift */; };
 		70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */; };
 		70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8752A9866FD00BC1BF1 /* ContentView.swift */; };
 		70FFD8782A9866FD00BC1BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FFD8772A9866FD00BC1BF1 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4377212A98766D004E6B0F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0B4377232A987A46004E6B0F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		70FFD8702A9866FD00BC1BF1 /* WhiteCane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteCane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteCaneApp.swift; sourceTree = "<group>"; };
 		70FFD8752A9866FD00BC1BF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B762F8B2A98688F0085B5E6 /* Musk */ = {
+			isa = PBXGroup;
+			children = (
+				0B4377212A98766D004E6B0F /* ButtonView.swift */,
+				0B4377232A987A46004E6B0F /* ColorExtension.swift */,
+			);
+			path = Musk;
+			sourceTree = "<group>";
+		};
 		70FFD8672A9866FD00BC1BF1 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +68,7 @@
 		70FFD8722A9866FD00BC1BF1 /* WhiteCane */ = {
 			isa = PBXGroup;
 			children = (
+				0B762F8B2A98688F0085B5E6 /* Musk */,
 				70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */,
 				70FFD8752A9866FD00BC1BF1 /* ContentView.swift */,
 				70FFD8772A9866FD00BC1BF1 /* Assets.xcassets */,
@@ -145,6 +159,8 @@
 			files = (
 				70FFD87D2A9866FD00BC1BF1 /* Persistence.swift in Sources */,
 				70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */,
+				0B4377222A98766D004E6B0F /* ButtonView.swift in Sources */,
+				0B4377242A987A46004E6B0F /* ColorExtension.swift in Sources */,
 				70FFD8802A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld in Sources */,
 				70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */,
 			);
