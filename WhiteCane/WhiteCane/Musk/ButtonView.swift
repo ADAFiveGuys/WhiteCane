@@ -12,6 +12,7 @@ import SwiftUI
 struct ButtonView: View {
     let text: String
     var color: Color? = nil
+    var textColor: Color? = nil
     let action: () -> Void
     
     var body: some View {
@@ -24,9 +25,10 @@ struct ButtonView: View {
                     .foregroundColor(color == nil ? .yellowCustom : color)
                     .padding(.horizontal, 24)
                 Text(text)
-                    .font(Font.custom("SF Pro Text", size: 30).weight(.semibold))
-                    .foregroundColor(.black)
-                    
+                    .fontWeight(.semibold)
+                    .font(.title)
+                    .foregroundColor(textColor == nil ? .black : textColor)
+                
             }
         }
     }
@@ -47,7 +49,8 @@ struct NavigationLinkView<Destination: View>: View {
                     .foregroundColor(color == nil ? .yellowCustom : color)
                     .padding(.horizontal, 24)
                 Text(text)
-                    .font(Font.custom("SF Pro Text", size: 30).weight(.semibold))
+                    .fontWeight(.semibold)
+                    .font(.title)
                     .foregroundColor(.black)
                     
             }

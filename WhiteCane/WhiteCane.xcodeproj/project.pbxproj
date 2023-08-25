@@ -10,6 +10,19 @@
 		0B4377222A98766D004E6B0F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377212A98766D004E6B0F /* ButtonView.swift */; };
 		0B4377242A987A46004E6B0F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377232A987A46004E6B0F /* ColorExtension.swift */; };
 		0B4377262A987D1E004E6B0F /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377252A987D1E004E6B0F /* TextFieldView.swift */; };
+		0B4377282A989406004E6B0F /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377272A989406004E6B0F /* Sound.swift */; };
+		0B43772C2A989737004E6B0F /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B43772A2A989736004E6B0F /* rooster.mp3 */; };
+		0B43772D2A989737004E6B0F /* siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B43772B2A989736004E6B0F /* siren.mp3 */; };
+		0B4377342A98B18A004E6B0F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377332A98B18A004E6B0F /* OnboardingView.swift */; };
+		0B4377362A98B6FB004E6B0F /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377352A98B6FB004E6B0F /* Onboarding2View.swift */; };
+		0B4377382A98BBA4004E6B0F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377372A98BBA4004E6B0F /* MainView.swift */; };
+		0B43773A2A98C575004E6B0F /* ShelterRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377392A98C575004E6B0F /* ShelterRoute.swift */; };
+		0B43773E2A98CDC5004E6B0F /* DisasterCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43773D2A98CDC5004E6B0F /* DisasterCheckView.swift */; };
+		0B4377422A98F521004E6B0F /* GuidelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377412A98F521004E6B0F /* GuidelinesView.swift */; };
+		0B4377442A98F638004E6B0F /* EarthquakeGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377432A98F638004E6B0F /* EarthquakeGuide.swift */; };
+		0B4377462A98FDC7004E6B0F /* WarGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377452A98FDC7004E6B0F /* WarGuide.swift */; };
+		0B4377482A98FFB3004E6B0F /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377472A98FFB3004E6B0F /* SirenView.swift */; };
+		0B43774A2A9903D4004E6B0F /* HealthInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377492A9903D4004E6B0F /* HealthInfoView.swift */; };
 		70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */; };
 		70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8752A9866FD00BC1BF1 /* ContentView.swift */; };
 		70FFD8782A9866FD00BC1BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FFD8772A9866FD00BC1BF1 /* Assets.xcassets */; };
@@ -22,6 +35,19 @@
 		0B4377212A98766D004E6B0F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		0B4377232A987A46004E6B0F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0B4377252A987D1E004E6B0F /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		0B4377272A989406004E6B0F /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		0B43772A2A989736004E6B0F /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rooster.mp3; sourceTree = "<group>"; };
+		0B43772B2A989736004E6B0F /* siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = siren.mp3; sourceTree = "<group>"; };
+		0B4377332A98B18A004E6B0F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0B4377352A98B6FB004E6B0F /* Onboarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
+		0B4377372A98BBA4004E6B0F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0B4377392A98C575004E6B0F /* ShelterRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterRoute.swift; sourceTree = "<group>"; };
+		0B43773D2A98CDC5004E6B0F /* DisasterCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterCheckView.swift; sourceTree = "<group>"; };
+		0B4377412A98F521004E6B0F /* GuidelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidelinesView.swift; sourceTree = "<group>"; };
+		0B4377432A98F638004E6B0F /* EarthquakeGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeGuide.swift; sourceTree = "<group>"; };
+		0B4377452A98FDC7004E6B0F /* WarGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGuide.swift; sourceTree = "<group>"; };
+		0B4377472A98FFB3004E6B0F /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
+		0B4377492A9903D4004E6B0F /* HealthInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoView.swift; sourceTree = "<group>"; };
 		70FFD8702A9866FD00BC1BF1 /* WhiteCane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteCane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteCaneApp.swift; sourceTree = "<group>"; };
 		70FFD8752A9866FD00BC1BF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,12 +68,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4377292A989728004E6B0F /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				0B43772A2A989736004E6B0F /* rooster.mp3 */,
+				0B43772B2A989736004E6B0F /* siren.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		0B4377322A98B167004E6B0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B4377332A98B18A004E6B0F /* OnboardingView.swift */,
+				0B4377352A98B6FB004E6B0F /* Onboarding2View.swift */,
+				0B4377372A98BBA4004E6B0F /* MainView.swift */,
+				0B4377392A98C575004E6B0F /* ShelterRoute.swift */,
+				0B43773D2A98CDC5004E6B0F /* DisasterCheckView.swift */,
+				0B4377412A98F521004E6B0F /* GuidelinesView.swift */,
+				0B4377432A98F638004E6B0F /* EarthquakeGuide.swift */,
+				0B4377452A98FDC7004E6B0F /* WarGuide.swift */,
+				0B4377472A98FFB3004E6B0F /* SirenView.swift */,
+				0B4377492A9903D4004E6B0F /* HealthInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0B762F8B2A98688F0085B5E6 /* Musk */ = {
 			isa = PBXGroup;
 			children = (
+				0B4377272A989406004E6B0F /* Sound.swift */,
 				0B4377212A98766D004E6B0F /* ButtonView.swift */,
-				0B4377232A987A46004E6B0F /* ColorExtension.swift */,
 				0B4377252A987D1E004E6B0F /* TextFieldView.swift */,
+				0B4377232A987A46004E6B0F /* ColorExtension.swift */,
+				0B4377322A98B167004E6B0F /* View */,
 			);
 			path = Musk;
 			sourceTree = "<group>";
@@ -71,6 +125,7 @@
 		70FFD8722A9866FD00BC1BF1 /* WhiteCane */ = {
 			isa = PBXGroup;
 			children = (
+				0B4377292A989728004E6B0F /* Sound */,
 				0B762F8B2A98688F0085B5E6 /* Musk */,
 				70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */,
 				70FFD8752A9866FD00BC1BF1 /* ContentView.swift */,
@@ -148,7 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B43772D2A989737004E6B0F /* siren.mp3 in Resources */,
 				70FFD87B2A9866FD00BC1BF1 /* Preview Assets.xcassets in Resources */,
+				0B43772C2A989737004E6B0F /* rooster.mp3 in Resources */,
 				70FFD8782A9866FD00BC1BF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,12 +218,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				70FFD87D2A9866FD00BC1BF1 /* Persistence.swift in Sources */,
+				0B4377462A98FDC7004E6B0F /* WarGuide.swift in Sources */,
 				0B4377262A987D1E004E6B0F /* TextFieldView.swift in Sources */,
 				70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */,
+				0B4377422A98F521004E6B0F /* GuidelinesView.swift in Sources */,
+				0B4377342A98B18A004E6B0F /* OnboardingView.swift in Sources */,
+				0B43774A2A9903D4004E6B0F /* HealthInfoView.swift in Sources */,
+				0B43773E2A98CDC5004E6B0F /* DisasterCheckView.swift in Sources */,
 				0B4377222A98766D004E6B0F /* ButtonView.swift in Sources */,
 				0B4377242A987A46004E6B0F /* ColorExtension.swift in Sources */,
 				70FFD8802A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld in Sources */,
+				0B43773A2A98C575004E6B0F /* ShelterRoute.swift in Sources */,
+				0B4377442A98F638004E6B0F /* EarthquakeGuide.swift in Sources */,
+				0B4377482A98FFB3004E6B0F /* SirenView.swift in Sources */,
+				0B4377382A98BBA4004E6B0F /* MainView.swift in Sources */,
+				0B4377362A98B6FB004E6B0F /* Onboarding2View.swift in Sources */,
 				70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */,
+				0B4377282A989406004E6B0F /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
