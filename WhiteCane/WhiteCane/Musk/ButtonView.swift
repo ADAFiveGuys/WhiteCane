@@ -32,6 +32,29 @@ struct ButtonView: View {
     }
 }
 
+struct NavigationLinkView<Destination: View>: View {
+    let text: String
+    let destination: Destination
+    var color: Color? = nil
+    
+    var body: some View {
+        NavigationLink {
+            
+        } label: {
+            ZStack {
+                Rectangle()
+                    .cornerRadius(40)
+                    .foregroundColor(color == nil ? .yellowCustom : color)
+                    .padding(.horizontal, 24)
+                Text(text)
+                    .font(Font.custom("SF Pro Text", size: 30).weight(.semibold))
+                    .foregroundColor(.black)
+                    
+            }
+        }
+    }
+}
+
 struct Button_Preview: PreviewProvider {
     static var previews: some View {
         VStack {
