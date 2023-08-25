@@ -18,12 +18,12 @@ struct GuidelinesView: View {
                 .padding(.top)
             Spacer()
             
-            NavigationLinkView(text: "지진", destination: ContentView())
-                .frame(height: 167)
+            NavigationLinkView(text: "지진", destination: EarthquakeGuide())
+                .frame(height: 100)
                 .padding(.bottom)
             
-            NavigationLinkView(text: "전쟁", destination: ContentView())
-                .frame(height: 167)
+            NavigationLinkView(text: "전쟁", destination: WarGuide())
+                .frame(height: 100)
             
         }
     }

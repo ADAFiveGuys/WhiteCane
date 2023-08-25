@@ -34,8 +34,8 @@ struct HealthInfoView: View {
                         .overlay {
                             Text("앞면")
                                 .foregroundColor(.white)
-                                .font(.title)
-                                .fontWeight(.semibold)
+                                .font(.title2)
+                                .fontWeight(.heavy)
                         }
                 }
                 
@@ -48,8 +48,8 @@ struct HealthInfoView: View {
                         .overlay {
                             Text("뒷면")
                                 .foregroundColor(.white)
-                                .font(.title)
-                                .fontWeight(.semibold)
+                                .font(.title2)
+                                .fontWeight(.heavy)
                         }
                 }
             }

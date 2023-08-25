@@ -12,7 +12,7 @@ struct OnboardingView: View {
         VStack(spacing: 20) {
             Group {
                 Text("환영해요!")
-                    .fontWeight(.semibold)
+                    .fontWeight(.heavy)
                     .font(.title)
                 Text("안전지팡이는 재난 상황에서\n시각 지원이 필요한 분들을 위해 만들어졌어요.")
                 Text("지진, 전시 상황에서 가까운 대피소로\n빠르고 안전하게 안내해드릴게요!")
@@ -25,7 +25,7 @@ struct OnboardingView: View {
                     ZStack {
                         Image(systemName: "location.circle.fill")
                             .resizable()
-                            .frame(width: 28, height: 24)
+                            .frame(width: 24, height: 24)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
@@ -33,28 +33,31 @@ struct OnboardingView: View {
                     VStack(alignment: .leading) {
                         Text("대피소 안내").fontWeight(.semibold)
                     }
+                    .padding(.leading, 10)
                 }
                 
                 HStack {
                     ZStack {
                         Image(systemName: "lanyardcard.fill")
                             .resizable()
-                            .frame(width: 28, height: 24)
+                            .frame(width: 19, height: 24)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
                     }
                     VStack(alignment: .leading) {
-                        Text("건강정보 카드").fontWeight(.semibold)
+                        Text("건강정보 카드")
+                            .fontWeight(.semibold)
                         Text("긴급 상황시 제시해요")
                     }
+                    .padding(.leading, 10)
                 }
                 
                 HStack {
                     ZStack {
                         Image(systemName: "person.fill.questionmark")
                             .resizable()
-                            .frame(width: 28, height: 24)
+                            .frame(width: 24, height: 20)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
@@ -62,6 +65,7 @@ struct OnboardingView: View {
                     VStack(alignment: .leading) {
                         Text("재난 상황별 행동 요령").fontWeight(.semibold)
                     }
+                    .padding(.leading, 10)
                 }
 
                 
@@ -69,15 +73,16 @@ struct OnboardingView: View {
                     ZStack {
                         Image(systemName: "envelope.fill")
                             .resizable()
-                            .frame(width: 28, height: 24)
+                            .frame(width: 24, height: 18)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
                     }
                     VStack(alignment: .leading) {
                         Text("재난 문자 확인").fontWeight(.semibold)
-                        Text("최근 일주일간의 문자를 확인해요")
+                        Text("최근 일주일간의 문자를 확인해요.")
                     }
+                    .padding(.leading, 10)
                 }
                 
                 HStack {
@@ -91,11 +96,13 @@ struct OnboardingView: View {
                     }
                     VStack(alignment: .leading) {
                         Text("긴급 사이렌").fontWeight(.semibold)
-                        Text("주변 도움이 필요할 때 사용해요")
+                        Text("주변 도움이 필요할 때 사용해요.")
                     }
+                    .padding(.leading, 10)
                 }
             }
-            NavigationLinkView(text: "확인했어요.", destination: ContentView())
+            .padding(.bottom)
+            NavigationLinkView(text: "확인했어요.", destination: MainView())
                 .frame(height: 100)
 
             
