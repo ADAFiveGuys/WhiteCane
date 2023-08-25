@@ -10,7 +10,6 @@ import SwiftUI
 struct ShelterRoute: View {
     var body: some View {
         VStack {
-            Spacer()
             Text("현재 위치를 기반으로 가장\n가까운 대피소로 안내합니다")
                 .font(.title)
                 .fontWeight(.semibold)
@@ -19,12 +18,13 @@ struct ShelterRoute: View {
             Text("현재 위치는")
                 .font(.title2)
                 .fontWeight(.semibold)
+                .padding(.bottom)
             
             RoundedRectangle(cornerRadius: 40)
                 .stroke(Color.yellowCustom)
                 .frame(width: 342, height: 134)
                 .overlay {
-                    Text("현재 위치")
+                    Text("울산전시컨벤션센터")
                         .font(.title2)
                 }
                 .padding(.bottom)
@@ -32,19 +32,24 @@ struct ShelterRoute: View {
             Text("가까운 대피소는")
                 .font(.title2)
                 .fontWeight(.semibold)
+                .padding(.bottom)
             
             RoundedRectangle(cornerRadius: 40)
                 .stroke(Color.yellowCustom)
                 .frame(width: 342, height: 134)
                 .overlay {
-                    Text("가까운 대피소 위치\n약 0.0km")
+                    Text("지진실내구호소 삼남초등학교\n")
                         .font(.title2)
+                        .padding()
+                    Text("약 0.0km")
+                        .font(.title2)
+                        .padding(.top, 30)
                 }
             
             Spacer()
             
-            NavigationLinkView(text: "안내 시작", destination: ContentView())
-                .frame(height: 167)
+            NavigationLinkView(text: "안내 시작하기", destination: MainView())
+                .frame(height: 100)
                 
                 
         }.multilineTextAlignment(.center)

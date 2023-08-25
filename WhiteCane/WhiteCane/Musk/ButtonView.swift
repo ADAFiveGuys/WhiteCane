@@ -41,7 +41,7 @@ struct NavigationLinkView<Destination: View>: View {
     
     var body: some View {
         NavigationLink {
-            
+            destination
         } label: {
             ZStack {
                 Rectangle()

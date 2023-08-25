@@ -20,11 +20,11 @@ struct Onboarding2View: View {
             Spacer()
             
 
-            NavigationLinkView(text: "입력하기", destination: ContentView())
-                .frame(height: 167)
+            NavigationLinkView(text: "입력하기", destination: HealthInfoView())
+                .frame(height: 100)
                 .padding(.vertical, 30)
-            NavigationLinkView(text: "나중에 하기", destination: ContentView())
-                .frame(height: 167)
+            NavigationLinkView(text: "나중에 하기", destination: MainView())
+                .frame(height: 100)
         }.multilineTextAlignment(.center)
             .navigationBarBackButtonHidden()
     }

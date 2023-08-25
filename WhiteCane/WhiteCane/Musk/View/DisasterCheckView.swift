@@ -34,13 +34,16 @@ struct DisasterCheckView: View {
                 .fontWeight(.semibold)
                 .padding()
             
+            Text("최근 7일 동안의 재난 문자를 조회할 수 있어요.")
+                .padding(.bottom)
+            
             HStack {
                 Text("지역 선택")
                     .font(.title2)
                     .fontWeight(.semibold)
                 
-                ButtonView(text: "경상북도") {}
-                    .frame(width: 206, height: 50)
+                NavigationLinkView(text: "경상북도", destination: ContentView())
+                    .frame(width: 200, height: 50)
             }
             
             ButtonView(text: "조회하기", textColor: .black) {
@@ -51,9 +54,9 @@ struct DisasterCheckView: View {
                 List {
                     ScrollView {
                         ForEach(0..<dummy.count) { item in
-                            RoundedRectangle(cornerRadius: 20)
+                            RoundedRectangle(cornerRadius: 40)
                                 .stroke(Color.yellowCustom)
-                                .frame(width: 320, height: 150)
+                                .frame(width: 342, height: 134)
                                 .overlay {
                                     VStack(alignment: .leading) {
                                         Text("\(dummy[item])")
@@ -67,6 +70,7 @@ struct DisasterCheckView: View {
                                 .padding(.bottom)
                         }
                     }
+                    .background(Color.black)
                 }
                 
             } else {
