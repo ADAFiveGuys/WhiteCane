@@ -15,14 +15,16 @@ struct TextFieldView: View {
         
         HStack {
             Text(kind+":")
-                .font(Font.custom("SF Pro Text", size: 30).weight(.semibold))
+                .fontWeight(.semibold)
+                .font(.title)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.leading)
                 .padding(.leading)
                 .padding(.leading)
             Spacer()
             TextField("", text: $text)
-                .font(Font.custom("SF Pro Text", size: 30).weight(.semibold))
+                .fontWeight(.semibold)
+                .font(.title)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
             Spacer()
