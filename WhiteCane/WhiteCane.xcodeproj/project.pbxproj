@@ -32,6 +32,7 @@
 		70FFD87B2A9866FD00BC1BF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FFD87A2A9866FD00BC1BF1 /* Preview Assets.xcassets */; };
 		70FFD87D2A9866FD00BC1BF1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD87C2A9866FD00BC1BF1 /* Persistence.swift */; };
 		70FFD8802A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD87E2A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld */; };
+		866A4DA62A99704600B0AEE1 /* MyTestML2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 866A4DA52A99704600B0AEE1 /* MyTestML2.mlmodel */; };
 		86E7561F2A993A8C0053ABB1 /* MLTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7561D2A993A8C0053ABB1 /* MLTestView.swift */; };
 		86E756202A993A8C0053ABB1 /* MyTestML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 86E7561E2A993A8C0053ABB1 /* MyTestML.mlmodel */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		70FFD87A2A9866FD00BC1BF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70FFD87C2A9866FD00BC1BF1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		70FFD87F2A9866FD00BC1BF1 /* WhiteCane.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhiteCane.xcdatamodel; sourceTree = "<group>"; };
+		866A4DA52A99704600B0AEE1 /* MyTestML2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyTestML2.mlmodel; sourceTree = "<group>"; };
 		86E7561D2A993A8C0053ABB1 /* MLTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLTestView.swift; sourceTree = "<group>"; };
 		86E7561E2A993A8C0053ABB1 /* MyTestML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyTestML.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 			children = (
 				86E7561D2A993A8C0053ABB1 /* MLTestView.swift */,
 				86E7561E2A993A8C0053ABB1 /* MyTestML.mlmodel */,
+				866A4DA52A99704600B0AEE1 /* MyTestML2.mlmodel */,
 			);
 			path = Jerry;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				70FFD87D2A9866FD00BC1BF1 /* Persistence.swift in Sources */,
 				86E7561F2A993A8C0053ABB1 /* MLTestView.swift in Sources */,
+				866A4DA62A99704600B0AEE1 /* MyTestML2.mlmodel in Sources */,
 				0B4377462A98FDC7004E6B0F /* WarGuide.swift in Sources */,
 				86E756202A993A8C0053ABB1 /* MyTestML.mlmodel in Sources */,
 				0B4377262A987D1E004E6B0F /* TextFieldView.swift in Sources */,
