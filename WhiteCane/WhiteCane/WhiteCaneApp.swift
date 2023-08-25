@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct WhiteCaneApp: App {
     let persistenceController = PersistenceController.shared
+	@StateObject var locationManager = LocationManager()
 
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 OnboardingView()
+					.environmentObject(locationManager)
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
             }
         }

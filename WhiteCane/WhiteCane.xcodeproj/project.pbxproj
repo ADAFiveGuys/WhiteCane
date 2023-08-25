@@ -23,6 +23,9 @@
 		0B4377462A98FDC7004E6B0F /* WarGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377452A98FDC7004E6B0F /* WarGuide.swift */; };
 		0B4377482A98FFB3004E6B0F /* SirenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377472A98FFB3004E6B0F /* SirenView.swift */; };
 		0B43774A2A9903D4004E6B0F /* HealthInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4377492A9903D4004E6B0F /* HealthInfoView.swift */; };
+		7054D99B2A993C5C00F300F7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D99A2A993C5C00F300F7 /* MapView.swift */; };
+		7054D99D2A993C7500F300F7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D99C2A993C7500F300F7 /* LocationManager.swift */; };
+		7054D99F2A993CB400F300F7 /* NavigatingDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */; };
 		70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */; };
 		70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8752A9866FD00BC1BF1 /* ContentView.swift */; };
 		70FFD8782A9866FD00BC1BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FFD8772A9866FD00BC1BF1 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		0B4377452A98FDC7004E6B0F /* WarGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGuide.swift; sourceTree = "<group>"; };
 		0B4377472A98FFB3004E6B0F /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
 		0B4377492A9903D4004E6B0F /* HealthInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoView.swift; sourceTree = "<group>"; };
+		7054D99A2A993C5C00F300F7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7054D99C2A993C7500F300F7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingDirectionView.swift; sourceTree = "<group>"; };
 		70FFD8702A9866FD00BC1BF1 /* WhiteCane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteCane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteCaneApp.swift; sourceTree = "<group>"; };
 		70FFD8752A9866FD00BC1BF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +116,16 @@
 			path = Musk;
 			sourceTree = "<group>";
 		};
+		7054D9992A993C3F00F300F7 /* Junyoo */ = {
+			isa = PBXGroup;
+			children = (
+				7054D99A2A993C5C00F300F7 /* MapView.swift */,
+				7054D99C2A993C7500F300F7 /* LocationManager.swift */,
+				7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */,
+			);
+			path = Junyoo;
+			sourceTree = "<group>";
+		};
 		70FFD8672A9866FD00BC1BF1 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +145,7 @@
 		70FFD8722A9866FD00BC1BF1 /* WhiteCane */ = {
 			isa = PBXGroup;
 			children = (
+				7054D9992A993C3F00F300F7 /* Junyoo */,
 				86E7561C2A993A8C0053ABB1 /* Jerry */,
 				0B4377292A989728004E6B0F /* Sound */,
 				0B762F8B2A98688F0085B5E6 /* Musk */,
@@ -238,12 +255,14 @@
 				0B4377262A987D1E004E6B0F /* TextFieldView.swift in Sources */,
 				70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */,
 				0B4377422A98F521004E6B0F /* GuidelinesView.swift in Sources */,
+				7054D99B2A993C5C00F300F7 /* MapView.swift in Sources */,
 				0B4377342A98B18A004E6B0F /* OnboardingView.swift in Sources */,
 				0B43774A2A9903D4004E6B0F /* HealthInfoView.swift in Sources */,
 				0B43773E2A98CDC5004E6B0F /* DisasterCheckView.swift in Sources */,
 				0B4377222A98766D004E6B0F /* ButtonView.swift in Sources */,
 				0B4377242A987A46004E6B0F /* ColorExtension.swift in Sources */,
 				70FFD8802A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld in Sources */,
+				7054D99D2A993C7500F300F7 /* LocationManager.swift in Sources */,
 				0B43773A2A98C575004E6B0F /* ShelterRoute.swift in Sources */,
 				0B4377442A98F638004E6B0F /* EarthquakeGuide.swift in Sources */,
 				0B4377482A98FFB3004E6B0F /* SirenView.swift in Sources */,
@@ -251,6 +270,7 @@
 				0B4377362A98B6FB004E6B0F /* Onboarding2View.swift in Sources */,
 				70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */,
 				0B4377282A989406004E6B0F /* Sound.swift in Sources */,
+				7054D99F2A993CB400F300F7 /* NavigatingDirectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +399,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhiteCane/Preview Content\"";
-				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
+				DEVELOPMENT_TEAM = M75X2R2UVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -394,9 +416,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junyoo.WhiteCane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,9 +433,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WhiteCane/Preview Content\"";
-				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
+				DEVELOPMENT_TEAM = M75X2R2UVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,9 +450,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junyoo.WhiteCane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
