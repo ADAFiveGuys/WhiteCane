@@ -41,8 +41,9 @@ struct MainView: View {
     }
     
     var sirenButton: some View {
-        Button {
+        NavigationLink {
 //            playSound(sound: .siren)
+            SirenView()
         } label: {
             ZStack {
                 Rectangle()

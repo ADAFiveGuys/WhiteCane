@@ -60,7 +60,7 @@ struct OnboardingView: View {
                     }
                     .padding(.leading, 10)
                 }
-                
+            
                 HStack {
                     ZStack {
                         Image(systemName: "person.fill.questionmark")
