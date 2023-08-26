@@ -10,7 +10,7 @@ import SwiftUI
 struct ShelterRoute: View {
     var body: some View {
         VStack {
-            Text("현재 위치를 기반으로 가장\n가까운 대피소로 안내합니다")
+            Text("현재 위치를 기반으로 가장\n가까운 대피소로 안내합니다.")
                 .font(.title)
                 .fontWeight(.semibold)
                 .padding()
