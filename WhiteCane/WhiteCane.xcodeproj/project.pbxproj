@@ -55,6 +55,7 @@
 		0B4377452A98FDC7004E6B0F /* WarGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarGuide.swift; sourceTree = "<group>"; };
 		0B4377472A98FFB3004E6B0F /* SirenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirenView.swift; sourceTree = "<group>"; };
 		0B4377492A9903D4004E6B0F /* HealthInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoView.swift; sourceTree = "<group>"; };
+		573DFE3F2A9A3C8100E0AE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7054D99A2A993C5C00F300F7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		7054D99C2A993C7500F300F7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingDirectionView.swift; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 		70FFD8722A9866FD00BC1BF1 /* WhiteCane */ = {
 			isa = PBXGroup;
 			children = (
+				573DFE3F2A9A3C8100E0AE20 /* Info.plist */,
 				70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */,
 				70FFD8752A9866FD00BC1BF1 /* ContentView.swift */,
 				7054D9992A993C3F00F300F7 /* Junyoo */,
@@ -410,6 +412,7 @@
 				DEVELOPMENT_TEAM = M75X2R2UVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhiteCane/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -444,6 +447,7 @@
 				DEVELOPMENT_TEAM = M75X2R2UVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhiteCane/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
