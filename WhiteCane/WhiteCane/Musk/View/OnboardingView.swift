@@ -26,21 +26,27 @@ struct OnboardingView: View {
                         Image(systemName: "location.circle.fill")
                             .resizable()
                             .frame(width: 24, height: 24)
+                            .accessibility(hidden: true)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
                     }
                     VStack(alignment: .leading) {
-                        Text("대피소 안내").fontWeight(.semibold)
+                        Text("대피소 안내")
+                            .fontWeight(.semibold)
+                            .accessibility(label: Text("대피소 안내"))
                     }
                     .padding(.leading, 10)
                 }
+                .accessibilityElement(children: .combine)
+                .accessibility(label: Text("대피소 안내"))
                 
                 HStack {
                     ZStack {
                         Image(systemName: "lanyardcard.fill")
                             .resizable()
                             .frame(width: 19, height: 24)
+                            .accessibility(hidden: true)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
@@ -48,7 +54,9 @@ struct OnboardingView: View {
                     VStack(alignment: .leading) {
                         Text("건강정보 카드")
                             .fontWeight(.semibold)
-                        Text("긴급 상황시 제시해요")
+                            .accessibility(label: Text("건강정보 카드"))
+                        Text("긴급 상황시 제시해요.")
+                            .accessibility(label: Text("긴급 상황시 제시해요."))
                     }
                     .padding(.leading, 10)
                 }
@@ -58,12 +66,15 @@ struct OnboardingView: View {
                         Image(systemName: "person.fill.questionmark")
                             .resizable()
                             .frame(width: 24, height: 20)
+                            .accessibility(hidden: true)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
                     }
                     VStack(alignment: .leading) {
-                        Text("재난 상황별 행동 요령").fontWeight(.semibold)
+                        Text("재난 상황별 행동 요령")
+                            .fontWeight(.semibold)
+                            .accessibility(label: Text("재난 상황별 행동 요령"))
                     }
                     .padding(.leading, 10)
                 }
@@ -74,13 +85,17 @@ struct OnboardingView: View {
                         Image(systemName: "envelope.fill")
                             .resizable()
                             .frame(width: 24, height: 18)
+                            .accessibility(hidden: true)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
                     }
                     VStack(alignment: .leading) {
-                        Text("재난 문자 확인").fontWeight(.semibold)
+                        Text("재난 문자 확인")
+                            .fontWeight(.semibold)
+                            .accessibility(label: Text("재난 문자 확인"))
                         Text("최근 일주일간의 문자를 확인해요.")
+                            .accessibility(label: Text("최근 일주일간의 문자를 확인해요."))
                     }
                     .padding(.leading, 10)
                 }
@@ -90,13 +105,17 @@ struct OnboardingView: View {
                         Image(systemName: "light.beacon.max.fill")
                             .resizable()
                             .frame(width: 28, height: 24)
+                            .accessibility(hidden: true)
                         Circle()
                             .stroke(Color.yellowCustom)
                             .frame(width: 50, height: 50)
                     }
                     VStack(alignment: .leading) {
-                        Text("긴급 사이렌").fontWeight(.semibold)
+                        Text("긴급 사이렌")
+                            .fontWeight(.semibold)
+                            .accessibility(label: Text("긴급 사이렌"))
                         Text("주변 도움이 필요할 때 사용해요.")
+                            .accessibility(label: Text("주변 도움이 필요할 때 사용해요."))
                     }
                     .padding(.leading, 10)
                 }

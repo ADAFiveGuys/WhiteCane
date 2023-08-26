@@ -18,6 +18,7 @@ struct WhiteCaneApp: App {
                 OnboardingView()
 					.environmentObject(locationManager)
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .preferredColorScheme(.dark)
             }
         }
     }
