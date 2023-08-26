@@ -30,6 +30,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 	
 	@Published var mapView: MKMapView = MKMapView()
 	@Published var navigator = ""
+	@Published var navigatorDistance = ""
 	@Published var nextNavigator = ""
 	@Published var bearing = 0.0
 	@Published var distance = 0.0
@@ -63,20 +64,20 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 			self.distance = route.distance
 
 //			for step in route.steps {
-//				print("distance: \(step.distance)m \(step.instructions)")
-//				print("lat = \(step.polyline.coordinate.latitude) lng = \(step.polyline.coordinate.longitude)")
+//				print("\(step.distance)m \(step.instructions)")
 //			}
 			
 			if route.steps.count > 1 {
 				let secondStep = route.steps[1]
 				let distance = Int(secondStep.distance)
-				self.navigator = String("\(distance)m \(secondStep.instructions)")
+				self.navigator = secondStep.instructions
+				self.navigatorDistance = String("\(distance)m")
 				self.currentDestination = secondStep.polyline.coordinate
 			}
 
 			if route.steps.count > 2 {
 				let thirdStep = route.steps[2]
-				self.nextNavigator = String("다음은 \(thirdStep.instructions)")
+				self.nextNavigator = thirdStep.instructions
 			}
 
 			let rect = route.polyline.boundingMapRect
@@ -101,7 +102,6 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 		let difference = (rawDifference + 360).truncatingRemainder(dividingBy: 360)
 		
 		self.bearing = difference
-		print(bearing)
 		
 		if difference <= 5 {
 			vibrateDevice()

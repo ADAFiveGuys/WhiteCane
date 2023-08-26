@@ -25,7 +25,7 @@ struct NavigatingDirectionView: View {
 					.font(.title2)
 					.padding()
 				
-				Text(locationManager.navigator)
+				Text("\(locationManager.navigatorDistance) \(locationManager.navigator.filteredString())")
 					.font(.title)
 					.fontWeight(.semibold)
 				
@@ -43,11 +43,18 @@ struct NavigatingDirectionView: View {
 					.stroke(Color.yellow, lineWidth: 5)
 					.overlay {
 						VStack {
-							Image(systemName: "arrow.turn.up.left")
+							Image(systemName: {
+									if locationManager.nextNavigator.contains("좌회전") {
+										return "arrow.turn.up.left"
+									} else if locationManager.nextNavigator.contains("우회전") {
+										return "arrow.turn.up.right"
+									} else { return "arrow.up" }
+								}())
 								.font(.largeTitle)
 								.padding(.bottom)
 								.fontWeight(.heavy)
-							Text(locationManager.nextNavigator)
+							Text("다음은 \(locationManager.nextNavigator)")
+								.font(.headline)
 								.fontWeight(.semibold)
 						}
 					}
@@ -66,6 +73,24 @@ struct NavigatingDirectionView: View {
 		.onDisappear {
 			locationManager.stopUpdating()
 		}
+	}
+}
+
+extension String {
+	func filteredString() -> String {
+		var newInstruction = self
+
+		if self.contains("다리 위로 걸어가기") {
+			newInstruction = self.replacingOccurrences(of: ".* 다리 위로 걸어가기", with: "다리 건너기", options: .regularExpression)
+		} else if self.contains("계속 이동") {
+			newInstruction = self.replacingOccurrences(of: ".* 계속 이동", with: "직진", options: .regularExpression)
+		} else if self.contains("우회전") {
+			newInstruction = self.replacingOccurrences(of: ".* 우회전", with: "우회전", options: .regularExpression)
+		} else if self.contains("좌회전") {
+			newInstruction = self.replacingOccurrences(of: ".* 좌회전", with: "좌회전", options: .regularExpression)
+		}
+		
+		return newInstruction
 	}
 }
 
