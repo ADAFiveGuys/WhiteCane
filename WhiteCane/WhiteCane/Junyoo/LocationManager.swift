@@ -13,7 +13,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 	var locationManager: CLLocationManager?
 	var currentHeading = 0.0
 	var currentBearing = 0.0
-
+	var region = MKCoordinateRegion()
 	let directionRequest = MKDirections.Request()
 
 	//APPLE
@@ -29,7 +29,6 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 	var currentDestination = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
 	
 	@Published var mapView: MKMapView = MKMapView()
-	@Published var region = MKCoordinateRegion()
 	@Published var navigator = ""
 	@Published var nextNavigator = ""
 	@Published var bearing = 0.0
@@ -99,8 +98,10 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 		currentBearing = self.bearingToLocation(destination: self.currentDestination, from: currentLocation)
 		
 		let rawDifference = currentBearing - currentHeading
-		let difference = abs(rawDifference)
+		let difference = (rawDifference + 360).truncatingRemainder(dividingBy: 360)
+		
 		self.bearing = difference
+		print(bearing)
 		
 		if difference <= 5 {
 			vibrateDevice()

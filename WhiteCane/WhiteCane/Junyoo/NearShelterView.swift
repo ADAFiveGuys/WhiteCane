@@ -3,7 +3,7 @@
 //  WhiteCane
 //
 //  Created by Junyoo on 2023/08/26.
-//NavigationUtil.popToRootView
+//
 
 import SwiftUI
 
