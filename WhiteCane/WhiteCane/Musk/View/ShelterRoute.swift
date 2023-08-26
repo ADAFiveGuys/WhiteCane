@@ -38,21 +38,19 @@ struct ShelterRoute: View {
                 .stroke(Color.yellowCustom)
                 .frame(width: 342, height: 134)
                 .overlay {
-                    Text("지진실내구호소 삼남초등학교\n")
-                        .font(.title2)
-                        .padding()
-                    Text("약 0.8km")
-                        .font(.title2)
-                        .padding(.top, 30)
-                        .accessibilityLabel("약 0.8km")
+					VStack {
+						Text("e편한세상울산역어반스퀘어\n지하2층 대피소")
+							.multilineTextAlignment(.center)
+							.font(.title2)
+						Text("약 2.0km")
+							.font(.title2)
+					}
                 }
             
             Spacer()
             
-            NavigationLinkView(text: "안내 시작하기", destination: MainView())
+			NavigationLinkView(text: "안내 시작하기", destination: NavigatingDirectionView())
                 .frame(height: 100)
-                
-                
         }.multilineTextAlignment(.center)
     }
 }
