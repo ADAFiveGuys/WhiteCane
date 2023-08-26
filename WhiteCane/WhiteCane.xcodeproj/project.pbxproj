@@ -26,6 +26,7 @@
 		7054D99B2A993C5C00F300F7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D99A2A993C5C00F300F7 /* MapView.swift */; };
 		7054D99D2A993C7500F300F7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D99C2A993C7500F300F7 /* LocationManager.swift */; };
 		7054D99F2A993CB400F300F7 /* NavigatingDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */; };
+		7054D9A12A99B80500F300F7 /* NearShelterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054D9A02A99B80500F300F7 /* NearShelterView.swift */; };
 		70FFD8742A9866FD00BC1BF1 /* WhiteCaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */; };
 		70FFD8762A9866FD00BC1BF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FFD8752A9866FD00BC1BF1 /* ContentView.swift */; };
 		70FFD8782A9866FD00BC1BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FFD8772A9866FD00BC1BF1 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		7054D99A2A993C5C00F300F7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		7054D99C2A993C7500F300F7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingDirectionView.swift; sourceTree = "<group>"; };
+		7054D9A02A99B80500F300F7 /* NearShelterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearShelterView.swift; sourceTree = "<group>"; };
 		70FFD8702A9866FD00BC1BF1 /* WhiteCane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteCane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteCaneApp.swift; sourceTree = "<group>"; };
 		70FFD8752A9866FD00BC1BF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				7054D99A2A993C5C00F300F7 /* MapView.swift */,
 				7054D99C2A993C7500F300F7 /* LocationManager.swift */,
 				7054D99E2A993CB400F300F7 /* NavigatingDirectionView.swift */,
+				7054D9A02A99B80500F300F7 /* NearShelterView.swift */,
 			);
 			path = Junyoo;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				70FFD8802A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld in Sources */,
 				7054D99D2A993C7500F300F7 /* LocationManager.swift in Sources */,
 				0B43773A2A98C575004E6B0F /* ShelterRoute.swift in Sources */,
+				7054D9A12A99B80500F300F7 /* NearShelterView.swift in Sources */,
 				0B4377442A98F638004E6B0F /* EarthquakeGuide.swift in Sources */,
 				0B4377482A98FFB3004E6B0F /* SirenView.swift in Sources */,
 				0B4377382A98BBA4004E6B0F /* MainView.swift in Sources */,

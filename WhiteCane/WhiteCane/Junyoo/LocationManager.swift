@@ -19,9 +19,10 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 	//APPLE
 //	let source = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.33181512, longitude: -122.03048154))
 //	let destination = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.33020389, longitude: -122.02635116))
+	
 	//ULSAN
 	let source = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.555641772779026, longitude: 129.13138920400553))
-	let destination = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.562779643817, longitude: 129.12953811110478))
+	let destination = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 35.56108670994394, longitude: 129.13494923692343))
 
 	var currentLocation = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
 	var currentDestination = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
@@ -32,6 +33,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 	@Published var coordinator = ""
 	@Published var bearing: Double = 0.0
 	@Published var correctDirection = false
+	@Published var distance:Double = 0
 	
 	override init() {
 		super.init()
@@ -58,7 +60,8 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 			}
 			
 			let route = directionResonse.routes[0]
-			
+			self.distance = route.distance
+
 //			for step in route.steps {
 //				print("distance: \(step.distance)m \(step.instructions)")
 //				print("lat = \(step.polyline.coordinate.latitude) lng = \(step.polyline.coordinate.longitude)")
@@ -90,16 +93,9 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 		currentHeading = newHeading.trueHeading
 		currentBearing = self.bearingToLocation(destination: self.currentDestination, from: currentLocation)
 		
-		let rawDifference = (currentBearing - currentHeading + 360).truncatingRemainder(dividingBy: 360)
-		let difference: Double
-		if rawDifference <= 180 {
-			difference = rawDifference
-		} else {
-			difference = 360 - rawDifference
-		}
-		
+		let rawDifference = currentBearing - currentHeading
+		let difference = abs(rawDifference)
 		self.bearing = difference
-		print(bearing)
 		
 		if difference <= 5 {
 			vibrateDevice()
