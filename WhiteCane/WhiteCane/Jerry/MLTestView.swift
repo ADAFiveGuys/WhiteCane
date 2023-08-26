@@ -50,7 +50,7 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
         
         do {
             try captureDevice.lockForConfiguration()
-            captureDevice.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 10)
+            captureDevice.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 30)
             captureDevice.unlockForConfiguration()
         } catch {
             print(error.localizedDescription)
@@ -68,15 +68,15 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
                     let detectedText = results.map { observation in
                         "\(observation.labels[0].identifier) \(observation.confidence * 100)%"
                     }.joined(separator: "\n")
-                    print(detectedText)
+//                    print(detectedText)
                     DispatchQueue.main.async {
                         if let highestConfidence = results.first?.confidence, highestConfidence >= 0.5 {
                             self.detectedObjectText = "현재 방향에 문이 있습니다."
-                            print("문 o")
+//                            print("문 o")
 //                            self.shouldPerformDetection = false
                         } else {
                             self.detectedObjectText = "현재 방향에 문이 있지 않습니다."
-                            print("문 x ")
+//                            print("문 x ")
                         }
                     }
                 }
@@ -125,7 +125,7 @@ struct CameraView: View {
 			VStack {
 				Spacer()
 				ButtonView(text: "안내 종료하기") {
-					
+					NavigationUtil.popToRootView()
 				}.frame(height: 100)
 			}
         }
