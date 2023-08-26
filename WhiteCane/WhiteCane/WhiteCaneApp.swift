@@ -15,10 +15,10 @@ struct WhiteCaneApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                OnboardingView()
-					.environmentObject(locationManager)
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+				OnboardingView()
             }
+			.environmentObject(locationManager)
+			.environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

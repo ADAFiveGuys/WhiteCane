@@ -3,7 +3,7 @@
 //  WhiteCane
 //
 //  Created by Junyoo on 2023/08/26.
-//
+//NavigationUtil.popToRootView
 
 import SwiftUI
 
@@ -25,10 +25,8 @@ struct NearShelterView: View {
 				
 				Spacer()
 				
-				ButtonView(text: "카메라 실행하기") {
-					
-				}
-				.frame(height: 100)
+				NavigationLinkView(text: "카메라 실행하기", destination: CameraaView())
+					.frame(height: 100)
 			}
 			.foregroundColor(.white)
 		}

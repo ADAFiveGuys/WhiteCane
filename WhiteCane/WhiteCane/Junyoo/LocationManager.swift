@@ -18,6 +18,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 
 	//APPLE
 //	let source = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.33181512, longitude: -122.03048154))
+//	let destination = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.360140, longitude: -121.991130))
 //	let destination = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 37.33020389, longitude: -122.02635116))
 	
 	//ULSAN
@@ -30,10 +31,10 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 	@Published var mapView: MKMapView = MKMapView()
 	@Published var region = MKCoordinateRegion()
 	@Published var navigator = ""
-	@Published var coordinator = ""
-	@Published var bearing: Double = 0.0
+	@Published var nextNavigator = ""
+	@Published var bearing = 0.0
+	@Published var distance = 0.0
 	@Published var correctDirection = false
-	@Published var distance:Double = 0
 	
 	override init() {
 		super.init()
@@ -71,8 +72,12 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 				let secondStep = route.steps[1]
 				let distance = Int(secondStep.distance)
 				self.navigator = String("\(distance)m \(secondStep.instructions)")
-				self.coordinator = String("lat = \(secondStep.polyline.coordinate.latitude) lng = \(secondStep.polyline.coordinate.longitude)")
 				self.currentDestination = secondStep.polyline.coordinate
+			}
+
+			if route.steps.count > 2 {
+				let thirdStep = route.steps[2]
+				self.nextNavigator = String("다음은 \(thirdStep.instructions)")
 			}
 
 			let rect = route.polyline.boundingMapRect
@@ -143,12 +148,16 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 		locationManager?.startUpdatingHeading()
 	}
 	
+	func stopUpdating() {
+		locationManager?.stopUpdatingLocation()
+		locationManager?.stopUpdatingHeading()
+	}
+	
 	private func setupLocationManager() {
 		self.locationManager = CLLocationManager()
 		self.locationManager!.delegate = self
 		self.locationManager!.distanceFilter = 10.0
 		self.locationManager!.requestWhenInUseAuthorization()
-		startUpdating()
 
 		self.mapView.delegate = self
 		self.mapView.showsCompass = false

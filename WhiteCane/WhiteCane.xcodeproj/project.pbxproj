@@ -150,12 +150,12 @@
 		70FFD8722A9866FD00BC1BF1 /* WhiteCane */ = {
 			isa = PBXGroup;
 			children = (
+				70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */,
+				70FFD8752A9866FD00BC1BF1 /* ContentView.swift */,
 				7054D9992A993C3F00F300F7 /* Junyoo */,
 				86E7561C2A993A8C0053ABB1 /* Jerry */,
 				0B4377292A989728004E6B0F /* Sound */,
 				0B762F8B2A98688F0085B5E6 /* Musk */,
-				70FFD8732A9866FD00BC1BF1 /* WhiteCaneApp.swift */,
-				70FFD8752A9866FD00BC1BF1 /* ContentView.swift */,
 				70FFD8772A9866FD00BC1BF1 /* Assets.xcassets */,
 				70FFD87C2A9866FD00BC1BF1 /* Persistence.swift */,
 				70FFD87E2A9866FD00BC1BF1 /* WhiteCane.xcdatamodeld */,

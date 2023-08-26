@@ -98,7 +98,6 @@ struct CameraView: View {
                 .onDisappear {
                     cameraManager.stopSession()
                 }
-            ZStack {
                 ButtonView(text: "안내 종료하기") {
                     
                 }.frame(height: 100)
@@ -115,8 +114,6 @@ struct CameraView: View {
                 }.frame(height: 130)
                     .padding(.horizontal)
                     .offset(y:-340)
-            }
-            
         }
     }
 }

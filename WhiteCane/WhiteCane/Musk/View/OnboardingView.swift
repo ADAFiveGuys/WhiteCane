@@ -68,7 +68,6 @@ struct OnboardingView: View {
                     .padding(.leading, 10)
                 }
 
-                
                 HStack {
                     ZStack {
                         Image(systemName: "envelope.fill")
