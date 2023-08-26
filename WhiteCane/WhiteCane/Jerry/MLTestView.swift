@@ -8,7 +8,6 @@
 import SwiftUI
 import AVFoundation
 import Vision
-import ARKit
 
 class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     var captureSession: AVCaptureSession?
@@ -48,6 +47,15 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
         videoDataOutput = AVCaptureVideoDataOutput()
         videoDataOutput?.setSampleBufferDelegate(self, queue: DispatchQueue(label: "VideoDataOutputQueue"))
         captureSession?.addOutput(videoDataOutput!)
+        
+        do {
+            try captureDevice.lockForConfiguration()
+            captureDevice.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 1)
+            captureDevice.unlockForConfiguration()
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -61,14 +69,14 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
                         "\(observation.labels[0].identifier) \(observation.confidence * 100)%"
                     }.joined(separator: "\n")
                     print(detectedText)
-                    if let highestConfidence = results.first?.confidence, highestConfidence * 100 >= 50 {
-                        DispatchQueue.main.async {
+                    DispatchQueue.main.async {
+                        if let highestConfidence = results.first?.confidence, highestConfidence >= 0.5 {
                             self.detectedObjectText = "현재 방향에 문이 있습니다."
-                            self.shouldPerformDetection = false
-                        }
-                    } else {
-                        DispatchQueue.main.async {
+                            print("문 o")
+//                            self.shouldPerformDetection = false
+                        } else {
                             self.detectedObjectText = "현재 방향에 문이 있지 않습니다."
+                            print("문 x ")
                         }
                     }
                 }
@@ -148,6 +156,8 @@ struct CameraPreview: UIViewRepresentable {
 
 struct ObjectDetectionView_Previews: PreviewProvider {
     static var previews: some View {
-        CameraView()
+        CameraaView()
     }
 }
+
+
