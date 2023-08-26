@@ -50,7 +50,7 @@ class CameraManager: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleB
         
         do {
             try captureDevice.lockForConfiguration()
-            captureDevice.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 1)
+            captureDevice.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 10)
             captureDevice.unlockForConfiguration()
         } catch {
             print(error.localizedDescription)
@@ -96,7 +96,7 @@ struct CameraView: View {
     @ObservedObject var cameraManager = CameraManager()
 
     var body: some View {
-        VStack {
+        ZStack {
             CameraPreview(cameraManager: cameraManager)
 //                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .edgesIgnoringSafeArea(.all)
@@ -106,22 +106,28 @@ struct CameraView: View {
                 .onDisappear {
                     cameraManager.stopSession()
                 }
-                ButtonView(text: "안내 종료하기") {
-                    
-                }.frame(height: 100)
-                
-                ZStack {
-                    RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.yellowCustom,lineWidth: 2)
-                        .padding(.all, -1)
-                    RoundedRectangle(cornerRadius: 40)
-                        .fill(Color.black)
-                    Text(cameraManager.detectedObjectText)
-                        .font(.system(size: 22, weight: .semibold))
-                        .foregroundColor(.white)
-                }.frame(height: 130)
-                    .padding(.horizontal)
-                    .offset(y:-340)
+			VStack {
+				ZStack {
+						RoundedRectangle(cornerRadius: 40)
+							.stroke(Color.yellowCustom,lineWidth: 2)
+							.padding(.all, -1)
+						RoundedRectangle(cornerRadius: 40)
+							.fill(Color.black)
+						Text(cameraManager.detectedObjectText)
+							.font(.system(size: 22, weight: .semibold))
+							.foregroundColor(.white)
+					}
+					.frame(height: 130)
+					.padding(.horizontal)
+				.offset(y: -100)
+			}
+			
+			VStack {
+				Spacer()
+				ButtonView(text: "안내 종료하기") {
+					
+				}.frame(height: 100)
+			}
         }
     }
 }

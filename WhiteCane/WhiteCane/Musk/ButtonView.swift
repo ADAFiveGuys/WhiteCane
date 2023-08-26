@@ -28,7 +28,6 @@ struct ButtonView: View {
                     .fontWeight(.semibold)
                     .font(.title)
                     .foregroundColor(textColor == nil ? .black : textColor)
-                
             }
         }
     }
